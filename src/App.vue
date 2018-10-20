@@ -3,13 +3,15 @@
     <div class="search-bar">
       <p>What Spanish word would you like to multisearch? Type below, then press enter please.</p>
       <input type="text" v-model="keyword" autofocus="">
-      <button type="button" v-on:click="submit">Search</button>
-      <button type="button" v-on:click="next">Next</button>
     </div>
-    <div class="search-results">
-      <!-- <vue-frame v-for="item in results" v-bind:key="item"></vue-frame> -->
-      <!-- <iframe id="search-frame"></iframe> -->
-      <vue-friendly-iframe v-if="results.length" :src="results[currentIndex]"></vue-friendly-iframe>
+    <div class="search-results" v-if="results.length">
+      <ul>
+        <li v-for="result in results" 
+          v-bind:key="result.name">
+          <button v-on:click="setCurrentResult(result)">{{result.name}}</button>
+        </li>
+      </ul>
+      <vue-friendly-iframe v-if="keyword && currentResult" :src="currentResult.query(keyword)"></vue-friendly-iframe>
     </div>
   </div>
 </template>
@@ -25,16 +27,12 @@ export default {
   },
   data: () => ({
     keyword: '',
-    results: [],
-    currentIndex: 0,
+    results: [wiktionary, forvo, googleImages],
+    currentResult: null,
   }),
   methods: {
-    submit() {
-      const q = this.keyword;
-      this.results = [wiktionary(q), forvo(q), googleImages(q)];
-    },
-    next() {
-      this.currentIndex = (this.currentIndex + 1) % this.results.length;
+    setCurrentResult(r) {
+      this.currentResult = r;
     },
   },
 };
