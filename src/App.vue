@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import VueFriendlyIframe from 'vue-friendly-iframe';
 import { googleImages, forvo, wiktionary } from './lib/urls';
+import VueFriendlyIframe from './components/vue-iframe';
 
 export default {
   name: 'app',
