@@ -36,7 +36,7 @@ export default {
   data: () => ({
     keyword: '',
     results: [wiktionary, forvo, googleImages],
-    currentResult: null,
+    currentResult: wiktionary,
   }),
   methods: {
     setCurrentResult(r) {
