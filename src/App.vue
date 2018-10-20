@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="search-bar">
-      <p>What Spanish word would you like to multisearch? Type below, then press enter please.</p>
-      <input type="text" v-model="keyword" autofocus="">
+      <input type="text" v-model="keyword" autofocus="" placeholder="Word">
     </div>
     <div class="search-results" v-if="results.length">
       <ul class="search-results--nav">
