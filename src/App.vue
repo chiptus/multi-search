@@ -7,10 +7,11 @@
       <ul class="search-results--nav">
         <li v-for="result in results" 
           v-bind:key="result.name"
-          v-on:click="setCurrentResult(result)"
           class="nav-button"
+          v-on:click="setCurrentResult(result)"
           :class="result === currentResult ? 'active' : ''">
-          {{result.name}}
+          <button >{{result.name}}</button>
+          <button v-on:click="open(result)"><i data-feather="external-link"/></button>
         </li>
       </ul>
       <div class="browser">
@@ -27,6 +28,7 @@
 <script>
 import { googleImages, forvo, wiktionary } from './lib/urls';
 import VueFriendlyIframe from './components/vue-iframe';
+import feather from 'feather-icons';
 
 export default {
   name: 'app',
@@ -38,9 +40,18 @@ export default {
     results: [wiktionary, forvo, googleImages],
     currentResult: wiktionary,
   }),
+  mounted() {
+    feather.replace();
+  },
   methods: {
     setCurrentResult(r) {
       this.currentResult = r;
+    },
+    open(r) {
+      if (!this.keyword) {
+        return;
+      }
+      window.open(r.query(this.keyword));
     },
   },
 };
@@ -125,5 +136,9 @@ body {
 .browser {
   border: solid 1px var(--browser-border-color);
   height: calc(100% - 2.5em);
+}
+
+button svg {
+  height: 1em;
 }
 </style>

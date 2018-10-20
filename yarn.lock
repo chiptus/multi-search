@@ -1839,6 +1839,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.5:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -3175,6 +3180,14 @@ faye-websocket@~0.11.0:
   integrity sha1-8O/hjE9W5PQK/H4Gxxn9XuYYjzg=
   dependencies:
     websocket-driver ">=0.5.1"
+
+feather-icons@^4.7.3:
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.7.3.tgz#c33d95f2df4582f26a0bb4c11f281fe7faec12aa"
+  integrity sha512-uuYklJ5HR64WgUZSAcFlZBSjU3jDjDJTr3C62G5Oxq5WmetjM58cjVNLlB4sLgveOKlpCywLTd20m4ww06eLLA==
+  dependencies:
+    classnames "^2.2.5"
+    core-js "^2.5.3"
 
 figgy-pudding@^3.5.1:
   version "3.5.1"
