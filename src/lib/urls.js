@@ -2,6 +2,7 @@ export const googleImages = {
   name: 'Google Images',
   query: q =>
     `http://www.google.es/search?q=${q}&hl=en&tbo=d&site=imghp&tbm=isch&sout=1&biw=1366&bih=643`,
+  external: true
 };
 
 export const wiktionary = {

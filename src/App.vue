@@ -2,6 +2,7 @@
   <div id="app">
     <div class="search-bar">
       <input type="text" v-model="keyword" autofocus="" placeholder="Word">
+      <button type="button" v-on:click="search">Search</button>
     </div>
     <div class="search-results" v-if="results.length">
       <ul class="search-results--nav">
@@ -19,14 +20,14 @@
           v-for="result in results"
             v-bind:key="result.name"
             v-if="keyword"
-            v-show="currentResult == result" :src="result.query(keyword)"></vue-friendly-iframe>
+            v-show="currentResult == result" :src="result.url"></vue-friendly-iframe>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { googleImages, forvo, wiktionary } from './lib/urls';
+import * as urls from './lib/urls';
 import VueFriendlyIframe from './components/vue-iframe';
 import feather from 'feather-icons';
 
@@ -37,8 +38,8 @@ export default {
   },
   data: () => ({
     keyword: '',
-    results: [wiktionary, forvo, googleImages],
-    currentResult: wiktionary,
+    results: [],
+    currentResult: null,
   }),
   mounted() {
     feather.replace();
@@ -47,11 +48,22 @@ export default {
     setCurrentResult(r) {
       this.currentResult = r;
     },
-    open(r) {
-      if (!this.keyword) {
-        return;
+    open(url) {
+      window.open(url);
+    },
+    search() {
+      this.results = [];
+      this.currentResult = null;
+      for (let name in urls) {
+        const search = urls[name];
+        const url = search.query(this.keyword);
+        if (search.external) {
+          const newWindow = window.open(url);
+        } else {
+          this.results.push({ url, name });
+        }
       }
-      window.open(r.query(this.keyword));
+      this.currentResult = this.results.length ? this.results[0] : null;
     },
   },
 };
