@@ -58,7 +58,7 @@ export default {
         const search = urls[name];
         const url = search.query(this.keyword);
         if (search.external) {
-          const newWindow = window.open(url);
+          window.open(url);
         } else {
           this.results.push({ url, name });
         }
