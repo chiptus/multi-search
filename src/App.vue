@@ -13,6 +13,7 @@
           :class="result === currentResult ? 'active' : ''">
           <button >{{result.name}}</button>
           <button v-on:click="open(result)"><i data-feather="external-link"/></button>
+          <button v-on:click="refresh(result)"><i data-feather="refresh-cw"/></button>
         </li>
       </ul>
       <div class="browser">
@@ -70,6 +71,10 @@ export default {
         return;
       }
       this.search();
+    },
+    refresh(result) {
+      result.url +=
+        (result.url.includes('?') ? '&' : '?') + 'rand=' + Math.random() * 100;
     },
   },
 };
