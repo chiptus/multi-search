@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="search-bar">
-      <input type="text" v-model="keyword" autofocus="" placeholder="Word">
+      <input type="text" v-model="keyword" autofocus="" placeholder="Word" v-on:keyup="submitOnEnter">
       <button type="button" v-on:click="search">Search</button>
     </div>
     <div class="search-results" v-if="results.length">
@@ -64,6 +64,12 @@ export default {
         }
       }
       this.currentResult = this.results.length ? this.results[0] : null;
+    },
+    submitOnEnter({ keyCode }) {
+      if (keyCode != 13) {
+        return;
+      }
+      this.search();
     },
   },
 };
