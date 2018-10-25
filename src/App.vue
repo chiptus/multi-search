@@ -18,7 +18,7 @@
       <div class="browser">
         <vue-friendly-iframe 
           v-for="result in results"
-            v-bind:key="result.name"
+            v-bind:key="result.url"
             v-if="keyword"
             v-show="currentResult == result" :src="result.url"></vue-friendly-iframe>
       </div>
