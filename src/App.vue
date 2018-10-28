@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div class="search-bar">
-      <input type="text" v-model="keyword" autofocus="" placeholder="Word" v-on:keyup="submitOnEnter">
-      <button type="button" v-on:click="search">Search</button>
-    </div>
+    <search-bar v-bind:initial-keyword="keyword" v-bind:on-search="search"></search-bar>
     <div class="search-results" v-if="results.length">
       <ul class="search-results--nav">
         <li v-for="result in results" 
@@ -20,8 +17,10 @@
         <vue-friendly-iframe 
           v-for="result in results"
             v-bind:key="result.url"
-            v-if="keyword"
-            v-show="currentResult == result" :src="result.url"></vue-friendly-iframe>
+            v-if="result.url"
+            v-show="currentResult == result" 
+            :src="result.url">
+            </vue-friendly-iframe>
       </div>
     </div>
   </div>
@@ -30,12 +29,14 @@
 <script>
 import * as urls from './lib/urls';
 import VueFriendlyIframe from './components/vue-iframe';
+import SearchBar from './components/search-bar';
 import feather from 'feather-icons';
 
 export default {
   name: 'app',
   components: {
     VueFriendlyIframe,
+    SearchBar,
   },
   data: () => ({
     keyword: '',
@@ -52,12 +53,12 @@ export default {
     open(url) {
       window.open(url);
     },
-    search() {
+    search(keyword) {
       this.results = [];
       this.currentResult = null;
       for (let name in urls) {
         const search = urls[name];
-        const url = search.query(this.keyword);
+        const url = search.query(keyword);
         if (search.external) {
           window.open(url);
         } else {
@@ -65,12 +66,6 @@ export default {
         }
       }
       this.currentResult = this.results.length ? this.results[0] : null;
-    },
-    submitOnEnter({ keyCode }) {
-      if (keyCode != 13) {
-        return;
-      }
-      this.search();
     },
     refresh(result) {
       result.url +=
