@@ -33,4 +33,8 @@ export default {
 </script>
 
 <style>
+.search-bar {
+  height: 50px;
+  padding: 1em;
+}
 </style>
