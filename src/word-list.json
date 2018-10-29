@@ -1,0 +1,3164 @@
+[
+  {
+    "word": "dog",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "cat",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "fish",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "bird",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "cow",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "pig",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "mouse",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "horse",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "wing",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "animal",
+    "confounded": false,
+    "category": "Animal"
+  },
+  {
+    "word": "train",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "plane",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "car",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "truck",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "bicycle",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "bus",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "boat",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "ship",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "tire",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "gasoline",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "engine",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "(train) ticket",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "transportation",
+    "confounded": false,
+    "category": "Transportation"
+  },
+  {
+    "word": "city",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "house",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "apartment",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "street/road",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "airport",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "train station",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "bridge",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "hotel",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "restaurant",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "farm",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "court",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "school",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "office",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "room",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "town",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "university",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "club",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "bar",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "park",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "camp",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "store/shop",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "theater",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "library",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "hospital",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "church",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "market",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "country",
+    "description": "USA France etc.",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "building",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "ground",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "space",
+    "description": "outer space",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "bank",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "location",
+    "confounded": false,
+    "category": "Location"
+  },
+  {
+    "word": "hat",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "dress",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "suit",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "skirt",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "shirt",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "T-shirt",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "pants",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "shoes",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "pocket",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "coat",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "stain",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "clothing",
+    "confounded": false,
+    "category": "Clothing"
+  },
+  {
+    "word": "red",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "green",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "blue",
+    "description": "light/dark",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "yellow",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "brown",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "pink",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "orange",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "black",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "white",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "gray",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "color",
+    "confounded": false,
+    "category": "Color"
+  },
+  {
+    "word": "son",
+    "confounded": true,
+    "category": "People"
+  },
+  {
+    "word": "daughter",
+    "confounded": true,
+    "category": "People"
+  },
+  {
+    "word": "mother",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "father",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "parent",
+    "description": "= mother/father",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "baby",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "man",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "woman",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "brother",
+    "confounded": true,
+    "category": "People"
+  },
+  {
+    "word": "sister",
+    "confounded": true,
+    "category": "People"
+  },
+  {
+    "word": "family",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "grandfather",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "grandmother",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "husband",
+    "confounded": true,
+    "category": "People"
+  },
+  {
+    "word": "wife",
+    "confounded": true,
+    "category": "People"
+  },
+  {
+    "word": "king",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "queen",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "president",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "neighbor",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "boy",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "girl",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "child",
+    "description": "= boy/girl",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "adult",
+    "description": "= man/woman",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "human",
+    "description": "≠ animal",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "friend",
+    "description": "Add a friend's name",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "victim",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "player",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "fan",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "crowd",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "person",
+    "confounded": false,
+    "category": "People"
+  },
+  {
+    "word": "Teacher",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "student",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "lawyer",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "doctor",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "patient",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "waiter",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "secretary",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "priest",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "police",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "army",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "soldier",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "artist",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "author",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "manager",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "reporter",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "actor",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "job",
+    "confounded": false,
+    "category": "Job"
+  },
+  {
+    "word": "religion",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "heaven",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "hell",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "death",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "medicine",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "money",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "dollar",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "bill",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "marriage",
+    "confounded": true,
+    "category": "Society"
+  },
+  {
+    "word": "wedding",
+    "confounded": true,
+    "category": "Society"
+  },
+  {
+    "word": "team",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "relationship",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "race",
+    "description": "ethnicity",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "sex",
+    "description": "the act",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "sex",
+    "description": "gender",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "murder",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "prison",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "technology",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "energy",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "war",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "peace",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "attack",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "election",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "magazine",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "newspaper",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "poison",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "gun",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "sport",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "race",
+    "description": "sport",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "exercise",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "ball",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "game",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "price",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "contract",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "drug",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "sign",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "science",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "God",
+    "confounded": false,
+    "category": "Society"
+  },
+  {
+    "word": "band",
+    "confounded": false,
+    "category": "Art"
+  },
+  {
+    "word": "song",
+    "confounded": false,
+    "category": "Art"
+  },
+  {
+    "word": "instrument",
+    "description": "musical",
+    "confounded": false,
+    "category": "Art"
+  },
+  {
+    "word": "music",
+    "confounded": false,
+    "category": "Art"
+  },
+  {
+    "word": "movie",
+    "confounded": false,
+    "category": "Art"
+  },
+  {
+    "word": "art",
+    "confounded": false,
+    "category": "Art"
+  },
+  {
+    "word": "coffee",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "tea",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "wine",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "beer",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "juice",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "water",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "milk",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "beverage",
+    "confounded": false,
+    "category": "Beverages"
+  },
+  {
+    "word": "egg",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "cheese",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "bread",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "soup",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "cake",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "chicken",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "pork",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "beef",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "apple",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "banana",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "orange",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "lemon",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "corn",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "rice",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "oil",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "seed",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "knife",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "spoon",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "fork",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "plate",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "cup",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "breakfast",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "lunch",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "dinner",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "sugar",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "salt",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "bottle",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "food",
+    "confounded": false,
+    "category": "Food"
+  },
+  {
+    "word": "table",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "chair",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "bed",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "dream",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "window",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "door",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "bedroom",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "kitchen",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "bathroom",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "pencil",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "pen",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "photograph",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "soap",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "book",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "page",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "key",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "paint",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "letter",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "note",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "wall",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "paper",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "floor",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "ceiling",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "roof",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "pool",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "lock",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "telephone",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "garden",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "yard",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "needle",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "bag",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "box",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "gift",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "card",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "ring",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "tool",
+    "confounded": false,
+    "category": "Home"
+  },
+  {
+    "word": "clock",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "lamp",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "fan",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "cell phone",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "network",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "computer",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "program",
+    "description": "computer",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "laptop",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "screen",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "camera",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "television",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "radio",
+    "confounded": false,
+    "category": "Electronics"
+  },
+  {
+    "word": "head",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "neck",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "face",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "beard",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "hair",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "eye",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "mouth",
+    "confounded": true,
+    "category": "Body"
+  },
+  {
+    "word": "lip",
+    "confounded": true,
+    "category": "Body"
+  },
+  {
+    "word": "nose",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "tooth",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "ear",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "tear",
+    "description": "drop",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "tongue",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "back",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "toe",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "finger",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "foot",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "hand",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "leg",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "arm",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "shoulder",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "heart",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "blood",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "brain",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "knee",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "sweat",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "disease",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "bone",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "voice",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "skin",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "body",
+    "confounded": false,
+    "category": "Body"
+  },
+  {
+    "word": "sea",
+    "confounded": true,
+    "category": "Nature"
+  },
+  {
+    "word": "ocean",
+    "confounded": true,
+    "category": "Nature"
+  },
+  {
+    "word": "river",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "mountain",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "rain",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "snow",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "tree",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "sun",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "moon",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "world",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "Earth",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "forest",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "sky",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "plant",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "wind",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "soil/earth",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "flower",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "valley",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "root",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "lake",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "star",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "grass",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "leaf",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "air",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "sand",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "beach",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "wave",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "fire",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "ice",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "island",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "hill",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "heat",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "nature",
+    "confounded": false,
+    "category": "Nature"
+  },
+  {
+    "word": "glass",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "metal",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "plastic",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "wood",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "stone",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "diamond",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "clay",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "dust",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "gold",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "copper",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "silver",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "material",
+    "confounded": false,
+    "category": "Materials"
+  },
+  {
+    "word": "meter",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "centimeter",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "kilogram",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "inch",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "foot",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "pound",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "half",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "circle",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "square",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "temperature",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "date",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "weight",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "edge",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "corner",
+    "confounded": false,
+    "category": "Math/Measurements"
+  },
+  {
+    "word": "map",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "dot",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "consonant",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "vowel",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "light",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "sound",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "yes",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "no",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "piece",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "pain",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "injury",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "hole",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "image",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "pattern",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "noun",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "verb",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "adjective",
+    "confounded": false,
+    "category": "Misc\tNouns"
+  },
+  {
+    "word": "top",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "bottom",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "side",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "front",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "back",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "outside",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "inside",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "up",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "down",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "left",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "right",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "straight",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "north",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "south",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "east",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "west",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "direction",
+    "confounded": false,
+    "category": "Directions"
+  },
+  {
+    "word": "Summer",
+    "confounded": false,
+    "category": "Seasons"
+  },
+  {
+    "word": "Spring",
+    "confounded": false,
+    "category": "Seasons"
+  },
+  {
+    "word": "Winter",
+    "confounded": false,
+    "category": "Seasons"
+  },
+  {
+    "word": "Fall",
+    "confounded": false,
+    "category": "Seasons"
+  },
+  {
+    "word": "season",
+    "confounded": false,
+    "category": "Seasons"
+  },
+  {
+    "word": "1",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "2",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "3",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "4",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "5",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "6",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "7",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "8",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "9",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "10",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "11",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "12",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "13",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "14",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "15",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "16",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "17",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "18",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "19",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "20",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "21",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "22",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "30",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "31",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "32",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "40",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "41",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "42",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "50",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "51",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "52",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "60",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "61",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "62",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "70",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "71",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "72",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "80",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "81",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "82",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "90",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "91",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "92",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "100",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "101",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "102",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "110",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "111",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "1000",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "1001",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "10000",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "100000",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "million",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "billion",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "1st",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "2nd",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "3rd",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "4th",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "5th",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "number",
+    "confounded": false,
+    "category": "Numbers"
+  },
+  {
+    "word": "January",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "February",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "March",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "April",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "May",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "June",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "July",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "August",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "September",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "October",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "November",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "December",
+    "confounded": false,
+    "category": "Months"
+  },
+  {
+    "word": "Monday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "Tuesday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "Wednesday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "Thursday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "Friday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "Saturday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "Sunday",
+    "confounded": false,
+    "category": "Days\tof\tthe\tweek"
+  },
+  {
+    "word": "year",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "month",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "week",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "day",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "hour",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "minute",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "second",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "morning",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "afternoon",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "evening",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "night",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "time",
+    "confounded": false,
+    "category": "Time"
+  },
+  {
+    "word": "work",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "play",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "walk",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "run",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "drive",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "fly",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "swim",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "go",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "stop",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "follow",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "think",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "speak/say",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "eat",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "drink",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "kill",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "die",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "smile",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "laugh",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "cry",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "buy",
+    "confounded": true,
+    "category": "Verbs"
+  },
+  {
+    "word": "pay",
+    "confounded": true,
+    "category": "Verbs"
+  },
+  {
+    "word": "sell",
+    "confounded": true,
+    "category": "Verbs"
+  },
+  {
+    "word": "shoot(a gun)",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "learn",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "jump",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "smell",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "hear",
+    "description": "a sound",
+    "confounded": true,
+    "category": "Verbs"
+  },
+  {
+    "word": "listen",
+    "description": "music",
+    "confounded": true,
+    "category": "Verbs"
+  },
+  {
+    "word": "taste",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "touch",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "see",
+    "description": "a bird",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "watch",
+    "description": "TV",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "kiss",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "burn",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "melt",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "dig",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "explode",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "sit",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "stand",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "love",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "pass by",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "cut",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "fight",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "lie down",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "dance",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "sleep",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "wake up",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "sing",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "count",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "marry",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "pray",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "win",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "lose",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "mix/stir",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "bend",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "wash",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "cook",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "open",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "close",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "write",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "call",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "turn",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "build",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "teach",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "grow",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "draw",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "feed",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "catch",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "throw",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "clean",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "find",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "fall",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "push",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "pull",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "carry",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "break",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "wear",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "hang",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "shake",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "sign",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "beat",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "lift",
+    "confounded": false,
+    "category": "Verbs"
+  },
+  {
+    "word": "long",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "short",
+    "description": "vs long",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "tall",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "short",
+    "description": "vs tall",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "wide",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "narrow",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "big/large",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "small/little",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "slow",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "fast",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "hot",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "cold",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "warm",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "cool",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "new",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "old",
+    "description": "new",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "young",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "old",
+    "description": "young",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "good",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "bad",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "wet",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "dry",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "sick",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "healthy",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "loud",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "quiet",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "happy",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "sad",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "beautiful",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "ugly",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "deaf",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "blind",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "nice",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "mean",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "rich",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "poor",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "thick",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "thin",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "expensive",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "cheap",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "flat",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "curved",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "male",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "female",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "tight",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "loose",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "high",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "low",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "soft",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "hard",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "deep",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "shallow",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "clean",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "dirty",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "strong",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "weak",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "dead",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "alive",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "heavy",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "light",
+    "description": "heavy",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "dark",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "light",
+    "description": "dark",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "nuclear",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "famous",
+    "confounded": false,
+    "category": "Adjectives"
+  },
+  {
+    "word": "I",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "you",
+    "description": "singular",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "he",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "she",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "it",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "we",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "you",
+    "description": "plural as in \"y'all\"",
+    "confounded": false,
+    "category": "Pronouns"
+  },
+  {
+    "word": "they.",
+    "confounded": false,
+    "category": "Pronouns"
+  }
+]
