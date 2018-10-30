@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <search-bar v-bind:initial-keyword="keyword" v-bind:on-search="search"></search-bar>
+    <search-bar 
+      v-bind:initial-keyword="keyword" 
+      v-bind:on-search="search"
+      v-bind:on-close="closeAllWindows"></search-bar>
     <browser :results="results"></browser>
   </div>
 </template>
@@ -20,8 +23,13 @@ export default {
     keyword: '',
     results: [],
     currentResult: null,
+    openWindows: [],
   }),
   methods: {
+    closeAllWindows() {
+      this.openWindows.forEach(window => window.close());
+      this.openWindows.length = 0;
+    },
     search(keyword) {
       this.results = [];
       this.currentResult = null;
@@ -29,7 +37,7 @@ export default {
         const search = urls[name];
         const url = search.query(keyword);
         if (search.external) {
-          window.open(url);
+          this.openWindows.push(window.open(url));
         } else {
           this.results.push({ url, name });
         }

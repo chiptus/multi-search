@@ -4,6 +4,8 @@
       placeholder="Word" 
       v-on:keyup="submitOnEnter">
     <button type="button" v-on:click="search">Search</button>
+    <button v-on:click="onClose" >Close opened windows</button>
+
   </div>
 </template>
 
@@ -17,6 +19,7 @@ export default {
   props: {
     initialKeyword: { type: String, required: true },
     onSearch: { type: Function, required: true },
+    onClose: { type: Function, required: true },
   },
   methods: {
     submitOnEnter({ keyCode }) {
