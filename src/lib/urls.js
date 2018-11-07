@@ -1,7 +1,7 @@
 export const googleImages = {
   name: 'Google Images',
   query: q =>
-    `http://www.google.es/search?q=${q}&hl=es&tbs=isz:l&tbo=d&site=imghp&tbm=isch&sout=1&biw=1366&bih=643`,
+    `https://www.google.es/search?q=${q}&hl=es&tbs=isz:l&tbo=d&site=imghp&tbm=isch&sout=1&biw=1366&bih=643`,
   external: true,
 };
 
@@ -12,5 +12,5 @@ export const wiktionary = {
 
 export const forvo = {
   name: 'forvo',
-  query: q => `http://www.forvo.com/word/${q}/#es`,
+  query: q => `https://www.forvo.com/word/${q}/#es`,
 };
