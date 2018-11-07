@@ -8,9 +8,8 @@
           v-for="word in words"
           :key="word.word + word.description + word.category"
           :value="word"
-        >{{word.word}}</option>
+        >{{word.word}} ({{word.category}})</option>
       </select>
-      <!-- <div v-if="englishWord">Category: {{englishWord.category}}</div> -->
     </div>
     <div class="search-input">
       <input
