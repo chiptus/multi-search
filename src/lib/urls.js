@@ -5,12 +5,17 @@ export const googleImages = {
   external: true,
 };
 
+export const forvo = {
+  name: 'forvo',
+  query: q => `https://www.forvo.com/word/${q}/#es`,
+};
+
 export const wiktionary = {
   name: 'wiktionary',
   query: q => `https://en.wiktionary.org/wiki/${q}#Spanish`,
 };
 
-export const forvo = {
-  name: 'forvo',
-  query: q => `https://www.forvo.com/word/${q}/#es`,
+export const fonemolabs = {
+  name: 'fonemolabs',
+  query: q => `http://www.fonemolabs.com/transcriptor.html#${q}+1`,
 };
