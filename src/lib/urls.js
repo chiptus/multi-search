@@ -18,4 +18,5 @@ export const wiktionary = {
 export const fonemolabs = {
   name: 'fonemolabs',
   query: q => `http://www.fonemolabs.com/transcriptor.html#${q}+1`,
+  external: true,
 };
