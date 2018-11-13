@@ -1,31 +1,36 @@
 <template>
-  <div class="search-bar">
-    <div class="english-word-selector">
-      <label for="english-word-input" hidden>English word</label>
-      <select v-model="englishWord" id="english-word-input">
-        <option :value="null" selected disabled>English word</option>
-        <option
-          v-for="word in words"
-          :key="word.word + word.description + word.category"
-          :value="word"
-        >{{word.word}} ({{word.category}})</option>
-      </select>
+  <div class="top-bar">
+    <div class="search-bar">
+      <div class="english-word-selector">
+        <label for="english-word-input" hidden>English word</label>
+        <select v-model="englishWord" id="english-word-input">
+          <option :value="null" selected disabled>English word</option>
+          <option
+            v-for="word in words"
+            :key="word.word + word.description + word.category"
+            :value="word"
+          >{{word.word}} ({{word.category}})</option>
+        </select>
+      </div>
+      <div class="search-input">
+        <input
+          type="text"
+          v-model="keyword"
+          autofocus
+          placeholder="Word"
+          id="keyword-input"
+          v-on:keyup="submitOnEnter"
+        >
+        <button type="button" v-on:click="search">Search</button>
+      </div>
     </div>
-    <div class="search-input">
-      <input
-        type="text"
-        v-model="keyword"
-        autofocus
-        placeholder="Word"
-        id="keyword-input"
-        v-on:keyup="submitOnEnter"
-      >
-      <button type="button" v-on:click="search">Search</button>
+    <div class="options-bar">
+      <button class="options-btn">
+        <font-awesome-icon icon="cogs"></font-awesome-icon>
+      </button>
+      <!-- <input id="close-windows-checkbox" type="checkbox" checked> -->
+      <!-- <label for="close-windows-checkbox">Close windows on search</label> -->
     </div>
-    <!-- <div class="search-input--options">
-        <input id="close-windows-checkbox" type="checkbox" checked/>
-        <label for="close-windows-checkbox">Close windows on search</label>
-    </div>-->
     <!-- TODO move to browser <button v-on:click="onClose" >Close opened windows</button> -->
   </div>
 </template>
@@ -73,11 +78,21 @@ export default {
 </script>
 
 <style>
-.search-bar {
+.top-bar {
   height: 50px;
   padding: 1em;
   display: flex;
   justify-content: space-evenly;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.options {
+  width: 50px;
 }
 
 #english-word-input {
@@ -99,5 +114,21 @@ export default {
 .search-input button {
   width: 50px;
   height: 100%;
+}
+
+.options-btn {
+  font-size: 2em;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.options-btn:hover {
+  color: chocolate;
+}
+
+.options-btn:active {
+  color: darkgoldenrod;
 }
 </style>
