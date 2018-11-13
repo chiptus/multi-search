@@ -4,10 +4,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faSyncAlt,
   faExternalLinkAlt,
+  faCogs,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faSyncAlt, faExternalLinkAlt);
+library.add(faSyncAlt, faExternalLinkAlt, faCogs);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;

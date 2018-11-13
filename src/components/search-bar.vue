@@ -25,9 +25,10 @@
       </div>
     </div>
     <div class="options-bar">
-      <button class="options-btn">
+      <button class="options-btn" @click="openModal">
         <font-awesome-icon icon="cogs"></font-awesome-icon>
       </button>
+      <options-modal v-if="isModalOpen" :close="closeModal"></options-modal>
       <!-- <input id="close-windows-checkbox" type="checkbox" checked> -->
       <!-- <label for="close-windows-checkbox">Close windows on search</label> -->
     </div>
@@ -38,19 +39,24 @@
 <script>
 import words from '../word-list.json';
 import spanishWords from '../spanish-list.json';
+import OptionsModal from './options-modal';
 
 export default {
+  components: {
+    OptionsModal,
+  },
   data() {
     return {
       keyword: this.initialKeyword,
       words,
       englishWord: null,
+      isModalOpen: false,
     };
   },
   props: {
     initialKeyword: { type: String, required: true },
     onSearch: { type: Function, required: true },
-    onClose: { type: Function, required: true },
+    // onClose: { type: Function, required: true },
   },
   watch: {
     englishWord(newValue) {
@@ -72,6 +78,12 @@ export default {
     },
     search() {
       this.onSearch(this.keyword);
+    },
+    openModal() {
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
     },
   },
 };
