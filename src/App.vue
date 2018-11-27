@@ -37,6 +37,9 @@ export default {
       this.results = [];
       this.currentResult = null;
       for (let search of this.urls) {
+        if (!search.enabled) {
+          continue;
+        }
         // const search = this.urls[name];
         const url = search.query(keyword);
         if (search.external) {
