@@ -28,7 +28,7 @@
       <button class="options-btn" @click="openModal">
         <font-awesome-icon icon="cogs"></font-awesome-icon>
       </button>
-      <options-modal v-if="isModalOpen" :close="closeModal" :urls="urls"></options-modal>
+      <options-modal v-if="isModalOpen" :close="closeModal" :urls="urls" :add-url="addUrl"></options-modal>
       <!-- <input id="close-windows-checkbox" type="checkbox" checked> -->
       <!-- <label for="close-windows-checkbox">Close windows on search</label> -->
     </div>
@@ -57,6 +57,7 @@ export default {
     initialKeyword: { type: String, required: true },
     onSearch: { type: Function, required: true },
     urls: { type: Array, required: true },
+    addUrl: { type: Function, required: true },
     // onClose: { type: Function, required: true },
   },
   watch: {

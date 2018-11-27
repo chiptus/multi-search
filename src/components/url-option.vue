@@ -7,6 +7,7 @@
       v-model="url.enabled"
     >
     <input name="url-name" id="url-name-input" v-model="url.name">
+    <input name="url-link" id="url-link-input" v-model="url.link">
     <input
       type="checkbox"
       :name="url.id+'-external'"

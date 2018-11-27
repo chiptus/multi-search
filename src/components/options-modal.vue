@@ -2,6 +2,7 @@
   <modal :close="close" title="Options">
     <template slot="body">
       <url-option v-for="url in urls" :key="url.id" :url="url"></url-option>
+      <button @click="addUrl">Add Url</button>
     </template>
     <template slot="footer">
       <button @click="save">Save</button>
@@ -20,6 +21,10 @@ export default {
     UrlOption,
   },
   props: {
+    addUrl: {
+      type: Function,
+      required: true,
+    },
     close: {
       type: Function,
       required: true,

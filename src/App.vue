@@ -5,6 +5,7 @@
       v-bind:on-search="search"
       v-bind:on-close="closeAllWindows"
       :urls="urls"
+      :add-url="addUrl"
     ></search-bar>
     <browser :results="results"></browser>
   </div>
@@ -33,6 +34,9 @@ export default {
       this.openWindows.forEach(window => window.close());
       this.openWindows.length = 0;
     },
+    addUrl() {
+      this.urls.push({});
+    },
     search(keyword) {
       this.results = [];
       this.currentResult = null;
@@ -41,7 +45,7 @@ export default {
           continue;
         }
         // const search = this.urls[name];
-        const url = search.query(keyword);
+        const url = search.link.replace('%s', keyword);
         if (search.external) {
           this.openWindows.push(window.open(url));
         } else {
