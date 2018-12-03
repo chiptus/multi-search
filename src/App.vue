@@ -1,11 +1,15 @@
 <template>
   <div id="app">
     <search-bar
-      v-bind:initial-keyword="keyword"
-      v-bind:on-search="search"
-      v-bind:on-close="closeAllWindows"
-      :urls="urls"
-      :add-url="addUrl"
+      v-bind="{
+        initialKeyword: keyword,
+        onSearch: search,
+        onClose: closeAllWindows,
+        urls,
+        addUrl,
+        isCloseOnSearchEnabled,
+        onSetCloseOnSearch
+      }"
     ></search-bar>
     <browser :results="results"></browser>
   </div>
@@ -28,6 +32,7 @@ export default {
     currentResult: null,
     openWindows: [],
     urls: Object.keys(urls).map(name => urls[name]),
+    isCloseOnSearchEnabled: true,
   }),
   methods: {
     closeAllWindows() {
@@ -38,6 +43,9 @@ export default {
       this.urls.push({});
     },
     search(keyword) {
+      if (this.isCloseOnSearchEnabled) {
+        this.closeAllWindows();
+      }
       this.results = [];
       this.currentResult = null;
       for (let search of this.urls) {
@@ -52,6 +60,9 @@ export default {
           this.results.push({ url, name: search.name });
         }
       }
+    },
+    onSetCloseOnSearch() {
+      this.isCloseOnSearchEnabled = !this.isCloseOnSearchEnabled;
     },
   },
 };

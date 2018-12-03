@@ -1,8 +1,17 @@
 <template>
   <modal :close="close" title="Options">
     <template slot="body">
-      <url-option v-for="url in urls" :key="url.id" :url="url"></url-option>
-      <button @click="addUrl">Add Url</button>
+      <urls-options :urls="urls" :addUrl="addUrl"></urls-options>
+      <div>
+        <input
+          type="checkbox"
+          name="close-checkbox"
+          id="close-checkbox"
+          :checked="isCloseOnSearchEnabled"
+          @click="onSetCloseOnSearch"
+        >
+        <label for="close-checkbox">Close windows on search</label>
+      </div>
     </template>
     <template slot="footer">
       <button @click="save">Save</button>
@@ -13,12 +22,12 @@
 
 <script>
 import Modal from './modal';
-import UrlOption from './url-option';
+import UrlsOptions from './urls-options';
 
 export default {
   components: {
     Modal,
-    UrlOption,
+    UrlsOptions,
   },
   props: {
     addUrl: {
@@ -30,6 +39,8 @@ export default {
       required: true,
     },
     urls: { type: Array, required: true },
+    isCloseOnSearchEnabled: { type: Boolean },
+    onSetCloseOnSearch: { type: Function, required: true },
   },
   methods: {
     save() {
