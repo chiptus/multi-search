@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import * as urls from './lib/urls';
 import SearchBar from './components/search-bar';
 import browser from './components/browser';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'app',
@@ -26,18 +26,25 @@ export default {
     SearchBar,
     browser,
   },
+  computed: mapState({
+    urls: state => state.settings.searchEngines,
+    isCloseOnSearchEnabled: state => state.settings.closeWindowsOnSearch,
+    openWindows: state => state.openWindows,
+  }),
   data: () => ({
     keyword: '',
     results: [],
     currentResult: null,
-    openWindows: [],
-    urls: Object.keys(urls).map(name => urls[name]),
-    isCloseOnSearchEnabled: true,
   }),
   methods: {
+    ...mapMutations({
+      clearWindows: 'clearWindows',
+      addOpenWindow: 'addOpenWindow',
+    }),
     closeAllWindows() {
-      this.openWindows.forEach(window => window.close());
-      this.openWindows.length = 0;
+      const openWindows = [...this.openWindows];
+      openWindows.forEach(window => window.close());
+      this.clearWindows();
     },
     addUrl() {
       this.urls.push({});
@@ -52,10 +59,9 @@ export default {
         if (!search.enabled) {
           continue;
         }
-        // const search = this.urls[name];
         const url = search.link.replace('%s', keyword);
         if (search.external) {
-          this.openWindows.push(window.open(url));
+          this.addOpenWindow(window.open(url));
         } else {
           this.results.push({ url, name: search.name });
         }
