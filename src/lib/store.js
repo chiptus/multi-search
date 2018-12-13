@@ -18,13 +18,22 @@ export const store = new Vuex.Store({
       spanish: spanishWords,
     },
     openTabs: [],
+    selectedTab: 0,
   },
   mutations: {
-    addOpenWindow(state, windowObj) {
-      state.openWindows.push(windowObj);
+    openTabs(state, tabs) {
+      state.openTabs = tabs;
+      state.selectedTab = 0;
     },
-    clearWindows(state) {
-      state.openWindows.length = 0;
+    closeTabs(state) {
+      state.openTabs = [];
+    },
+    toggleCloseOnSearch(state) {
+      state.settings.closeWindowsOnSearch = !state.settings
+        .closeWindowsOnSearch;
+    },
+    selectTab(state, index) {
+      state.selectedTab = index;
     },
   },
 });

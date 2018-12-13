@@ -8,17 +8,17 @@
         urls,
         addUrl,
         isCloseOnSearchEnabled,
-        onSetCloseOnSearch
+        onSetCloseOnSearch,
       }"
     ></search-bar>
-    <browser :results="results"></browser>
+    <browser v-bind="{openWindows}"></browser>
   </div>
 </template>
 
 <script>
 import SearchBar from './components/search-bar';
 import browser from './components/browser';
-import { mapState } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'app',
@@ -32,41 +32,45 @@ export default {
   }),
   data: () => ({
     keyword: '',
-    results: [],
-    currentResult: null,
-    openWindows: [],
+    openedWindows: [],
   }),
   methods: {
+    ...mapMutations({
+      openTabs: 'openTabs',
+      closeTabs: 'closeTabs',
+      onSetCloseOnSearch: 'toggleCloseOnSearch',
+    }),
     closeAllWindows() {
-      this.openWindows.forEach(window => window.close());
-      this.openWindows.length = 0;
+      this.openedWindows.forEach(window => window.close());
+      this.openedWindows.length = 0;
     },
     addUrl() {
       this.urls.push({});
     },
-    search(keyword) {
+    async search(keyword) {
       if (this.isCloseOnSearchEnabled) {
         this.closeAllWindows();
+        this.closeTabs();
       }
-      this.results = [];
-      this.currentResult = null;
-      for (let search of this.urls) {
-        if (!search.enabled) {
-          continue;
-        }
-        const url = search.link.replace('%s', keyword);
-        if (search.external) {
-          this.openWindows.push(window.open(url));
-        } else {
-          this.results.push({ url, name: search.name });
-        }
-      }
+      const results = this.urls
+        .filter(e => e.enabled)
+        .map(engine => ({
+          url: engine.link.replace('%s', keyword),
+          ...engine,
+        }));
+      this.openTabs(results.filter(r => !r.external));
+      await wait(3);
+      this.openWindows(results.filter(r => r.external));
     },
-    onSetCloseOnSearch() {
-      this.isCloseOnSearchEnabled = !this.isCloseOnSearchEnabled;
+    openWindows(windows) {
+      this.openedWindows.push(windows.map(w => window.open(w.url)));
     },
   },
 };
+
+function wait(seconds) {
+  return new Promise(res => setTimeout(res, seconds * 1000));
+}
 </script>
 
 <style>

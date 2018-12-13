@@ -1,13 +1,19 @@
 <template>
   <ul class="search-results--nav">
-    <li v-for="result in results" 
+    <li
+      v-for="(result, index) in results"
       v-bind:key="result.name"
       class="nav-button"
-      v-on:click="setResult(result)"
-      :class="result === currentResult ? 'active' : ''">
-      <button >{{result.name}}</button>
-      <button v-on:click="open(result)"><font-awesome-icon icon="external-link-alt"></font-awesome-icon></button>
-      <button v-on:click="refresh(result)"><font-awesome-icon  icon="sync-alt"></font-awesome-icon></button>
+      v-on:click="selectTab(index)"
+      :class="selectedTab === index ? 'active' : ''"
+    >
+      <button>{{result.name}}</button>
+      <button v-on:click="open(result)">
+        <font-awesome-icon icon="external-link-alt"></font-awesome-icon>
+      </button>
+      <button v-on:click="refresh(result)">
+        <font-awesome-icon icon="sync-alt"></font-awesome-icon>
+      </button>
     </li>
   </ul>
 </template>
@@ -19,17 +25,20 @@ export default {
       type: Array,
       required: true,
     },
-    setResult: {
+    selectTab: {
       type: Function,
       required: true,
     },
-    currentResult: {
-      type: Object,
+    selectedTab: {
+      type: Number,
+    },
+    openWindows: {
+      type: Function,
     },
   },
   methods: {
     open(result) {
-      window.open(result.url);
+      this.openWindows([result]);
     },
     refresh(result) {
       result.url +=
