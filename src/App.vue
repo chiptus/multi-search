@@ -18,7 +18,7 @@
 <script>
 import SearchBar from './components/search-bar';
 import browser from './components/browser';
-import { mapState, mapMutations } from 'vuex';
+import { mapState } from 'vuex';
 
 export default {
   name: 'app',
@@ -29,22 +29,17 @@ export default {
   computed: mapState({
     urls: state => state.settings.searchEngines,
     isCloseOnSearchEnabled: state => state.settings.closeWindowsOnSearch,
-    openWindows: state => state.openWindows,
   }),
   data: () => ({
     keyword: '',
     results: [],
     currentResult: null,
+    openWindows: [],
   }),
   methods: {
-    ...mapMutations({
-      clearWindows: 'clearWindows',
-      addOpenWindow: 'addOpenWindow',
-    }),
     closeAllWindows() {
-      const openWindows = [...this.openWindows];
-      openWindows.forEach(window => window.close());
-      this.clearWindows();
+      this.openWindows.forEach(window => window.close());
+      this.openWindows.length = 0;
     },
     addUrl() {
       this.urls.push({});
@@ -61,7 +56,7 @@ export default {
         }
         const url = search.link.replace('%s', keyword);
         if (search.external) {
-          this.addOpenWindow(window.open(url));
+          this.openWindows.push(window.open(url));
         } else {
           this.results.push({ url, name: search.name });
         }

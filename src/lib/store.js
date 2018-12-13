@@ -18,7 +18,6 @@ export const store = new Vuex.Store({
       spanish: spanishWords,
     },
     openTabs: [],
-    openWindows: [],
   },
   mutations: {
     addOpenWindow(state, windowObj) {

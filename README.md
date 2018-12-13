@@ -79,7 +79,7 @@ This is a helper for fluent-forever.com method and is based on fluent-forever.co
     [language]: TargetLanguageWord
   },
   openTabs: number[],
-  openWindows: window[]
+  // openWindows: window[]
 }
 ```
 
