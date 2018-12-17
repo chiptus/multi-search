@@ -29,9 +29,9 @@ export default {
   computed: mapState({
     urls: state => state.settings.searchEngines,
     isCloseOnSearchEnabled: state => state.settings.closeWindowsOnSearch,
+    keyword: state => state.keyword,
   }),
   data: () => ({
-    keyword: '',
     openedWindows: [],
   }),
   methods: {
@@ -39,6 +39,7 @@ export default {
       openTabs: 'openTabs',
       closeTabs: 'closeTabs',
       onSetCloseOnSearch: 'toggleCloseOnSearch',
+      setKeyword: 'setKeyword',
     }),
     closeAllWindows() {
       this.openedWindows.forEach(window => window.close());
@@ -48,6 +49,7 @@ export default {
       this.urls.push({});
     },
     async search(keyword) {
+      this.setKeyword(keyword);
       if (this.isCloseOnSearchEnabled) {
         this.closeAllWindows();
         this.closeTabs();

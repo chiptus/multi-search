@@ -35,10 +35,7 @@
         :urls="urls"
         :add-url="addUrl"
       ></options-modal>
-      <!-- <input id="close-windows-checkbox" type="checkbox" checked> -->
-      <!-- <label for="close-windows-checkbox">Close windows on search</label> -->
     </div>
-    <!-- TODO move to browser <button v-on:click="onClose" >Close opened windows</button> -->
   </div>
 </template>
 

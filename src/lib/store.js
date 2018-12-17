@@ -19,9 +19,10 @@ export const store = new Vuex.Store({
     },
     openTabs: [],
     selectedTab: 0,
+    keyword: 'adulto',
   },
   mutations: {
-    openTabs(state, tabs) {
+    openTabs(state, tabs = []) {
       state.openTabs = tabs;
       state.selectedTab = 0;
     },
@@ -32,8 +33,17 @@ export const store = new Vuex.Store({
       state.settings.closeWindowsOnSearch = !state.settings
         .closeWindowsOnSearch;
     },
-    selectTab(state, index) {
+    selectTab(state, index = 0) {
       state.selectedTab = index;
+    },
+    setKeyword(state, keyword = '') {
+      state.keyword = keyword;
+    },
+    setCloseOnSearch(state, close) {
+      state.settings.closeWindowsOnSearch = close;
+    },
+    saveEnginesInStore(state, engines) {
+      state.settings.searchEngines = engines;
     },
   },
 });

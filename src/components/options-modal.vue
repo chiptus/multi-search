@@ -1,7 +1,7 @@
 <template>
   <modal :close="close" title="Options">
     <template slot="body">
-      <urls-options :urls="urls" :addUrl="addUrl"></urls-options>
+      <urls-options :urls="searchEngines" :addUrl="addUrl" :setEngine="setEngine"></urls-options>
       <div>
         <input
           type="checkbox"
@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
 import Modal from './modal';
 import UrlsOptions from './urls-options';
 
@@ -29,23 +30,62 @@ export default {
     Modal,
     UrlsOptions,
   },
+  data() {
+    return {
+      enginesDirty: false,
+      closeOnSearchDirty: false,
+    };
+  },
   props: {
-    addUrl: {
-      type: Function,
-      required: true,
-    },
     close: {
       type: Function,
       required: true,
     },
-    urls: { type: Array, required: true },
-    isCloseOnSearchEnabled: { type: Boolean },
-    onSetCloseOnSearch: { type: Function, required: true },
+  },
+  computed: {
+    ...mapState({
+      searchEngines: state => state.settings.searchEngines,
+    }),
+    isCloseOnSearchEnabled: {
+      get() {
+        return typeof this._isCloseOnSearchEnabled !== 'undefined'
+          ? this._isCloseOnSearchEnabled
+          : this.$store.state.settings.closeWindowsOnSearch;
+      },
+      set(value) {
+        this._isCloseOnSearchEnabled = value;
+      },
+    },
   },
   methods: {
+    ...mapMutations({
+      setCloseOnSearch: 'setCloseOnSearch',
+      saveEnginesInStore: 'saveEnginesInStore',
+    }),
+    addUrl() {
+      this.searchEngines.push({});
+    },
     save() {
-      console.log('saving');
+      if (this.enginesDirty) {
+        this.saveEngines();
+      }
+      if (this.closeOnSearchDirty) {
+        this.saveCloseOnSearch();
+      }
       this.close();
+    },
+    saveEngines() {
+      this.saveEnginesInStore(this.searchEngines);
+    },
+    saveCloseOnSearch() {
+      this.setCloseOnSearch(this._isCloseOnSearchEnabled);
+    },
+    onSetCloseOnSearch({ target: { checked } }) {
+      this.isCloseOnSearchEnabled = checked;
+      this.closeOnSearchDirty = true;
+    },
+    setEngine() {
+      this.enginesDirty = true;
     },
   },
 };

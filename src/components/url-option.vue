@@ -5,15 +5,17 @@
       :name="url.id + '-enabled'"
       :id="url.id + '-enabled'"
       v-model="url.enabled"
+      @change="onSetEngine"
     >
-    <input name="url-name" id="url-name-input" v-model="url.name">
-    <input name="url-link" id="url-link-input" v-model="url.link">
+    <input name="url-name" id="url-name-input" v-model="url.name" @change="onSetEngine">
+    <input name="url-link" id="url-link-input" v-model="url.link" @change="onSetEngine">
     <div>
       <input
         type="checkbox"
         :name="url.id+'-external'"
         :id="url.id+'-external-checkbox'"
         v-model="url.external"
+        @change="onSetEngine"
       >
       <label :for="url.id+'-external-checkbox'">External</label>
     </div>
@@ -25,6 +27,15 @@ export default {
   props: {
     url: {
       required: true,
+    },
+    setEngine: {
+      required: true,
+      type: Function,
+    },
+  },
+  methods: {
+    onSetEngine() {
+      this.setEngine(this.url);
     },
   },
 };
