@@ -25,6 +25,7 @@ This is a helper for fluent-forever.com method and is based on fluent-forever.co
   - List of search engines
     - Name, url, enabled, external
   - Should external windows close when searching
+- different settings are saved between page changes
 
 ## Data models
 
