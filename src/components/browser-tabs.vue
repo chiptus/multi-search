@@ -37,7 +37,6 @@ export default {
     },
   },
   methods: {
-    // todo move to App.vue
     ...mapMutations({
       selectTab: 'selectTab',
     }),

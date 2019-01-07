@@ -63,7 +63,6 @@ export default {
     addUrl: { type: Function, required: true },
     isCloseOnSearchEnabled: { type: Boolean },
     onSetCloseOnSearch: { type: Function, required: true },
-    // onClose: { type: Function, required: true },
   },
   watch: {
     englishWord(newValue) {
