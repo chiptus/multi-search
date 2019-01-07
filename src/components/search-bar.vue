@@ -120,12 +120,11 @@ export default {
 }
 
 .search-input {
-  width: 300px;
+  display: flex;
 }
 
 .search-input input {
-  width: calc(100% - 55px);
-  height: 100%;
+  flex: 1;
   font-size: 1.5em;
 }
 
