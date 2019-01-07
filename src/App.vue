@@ -42,7 +42,7 @@ export default {
       setKeyword: 'setKeyword',
     }),
     closeAllWindows() {
-      this.openedWindows.forEach(window => window.close());
+      this.openedWindows.forEach(w => w.close());
       this.openedWindows.length = 0;
     },
     addUrl() {
@@ -65,7 +65,9 @@ export default {
       this.openWindows(results.filter(r => r.external));
     },
     openWindows(windows) {
-      this.openedWindows.push(windows.map(w => window.open(w.url)));
+      this.openedWindows = this.openedWindows.concat(
+        windows.map(w => window.open(w.url))
+      );
     },
   },
 };
