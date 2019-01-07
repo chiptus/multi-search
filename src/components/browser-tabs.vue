@@ -20,14 +20,12 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   props: {
     results: {
       type: Array,
-      required: true,
-    },
-    selectTab: {
-      type: Function,
       required: true,
     },
     selectedTab: {
@@ -35,10 +33,14 @@ export default {
     },
     openWindows: {
       type: Function,
+      required: true,
     },
   },
   methods: {
     // todo move to App.vue
+    ...mapMutations({
+      selectTab: 'selectTab',
+    }),
     open(result) {
       this.openWindows([result]);
     },
