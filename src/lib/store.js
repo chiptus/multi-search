@@ -1,12 +1,20 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import VuexPersist from 'vuex-persist';
+
 import * as urls from './urls';
 import englishWords from '../word-list.json';
 import spanishWords from '../spanish-list.json';
 
 Vue.use(Vuex);
 
+const vuexPersist = new VuexPersist({
+  key: 'multi-search',
+  storage: localStorage,
+});
+
 export const store = new Vuex.Store({
+  plugins: [vuexPersist.plugin],
   state: {
     settings: {
       searchEngines: Object.keys(urls).map(u => urls[u]),
@@ -19,7 +27,7 @@ export const store = new Vuex.Store({
     },
     openTabs: [],
     selectedTab: 0,
-    keyword: 'adulto',
+    keyword: '',
   },
   mutations: {
     openTabs(state, tabs = []) {
