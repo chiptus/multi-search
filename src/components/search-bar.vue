@@ -11,6 +11,12 @@
             :value="word"
           >{{word.word}} ({{word.category}})</option>
         </select>
+        <button type="button" @click="translate" alt="Translate">
+          <font-awesome-icon icon="language" size="lg"></font-awesome-icon>
+        </button>
+      </div>
+      <div class="arrow">
+        <font-awesome-icon icon="arrow-right" size="lg"></font-awesome-icon>
       </div>
       <div class="search-input">
         <input
@@ -21,7 +27,12 @@
           id="keyword-input"
           v-on:keyup="submitOnEnter"
         >
-        <button type="button" v-on:click="search">Search</button>
+        <button type="button" @click="search" alt="Search">
+          <font-awesome-icon icon="search" size="lg"></font-awesome-icon>
+        </button>
+        <button type="button" @click="next" alt="Next word">
+          <font-awesome-icon icon="fast-forward" size="lg"></font-awesome-icon>
+        </button>
       </div>
     </div>
     <div class="options-bar">
@@ -109,6 +120,10 @@ export default {
   justify-content: space-evenly;
 }
 
+.search-bar .arrow {
+  align-self: center;
+}
+
 .options {
   width: 50px;
 }
@@ -139,6 +154,7 @@ export default {
   background: none;
   cursor: pointer;
   outline: none;
+  align-self: center;
 }
 
 .options-btn:hover {
@@ -147,5 +163,13 @@ export default {
 
 .options-btn:active {
   color: darkgoldenrod;
+}
+
+.english-word-selector {
+  display: flex;
+}
+
+.english-word-selector button {
+  width: 50px;
 }
 </style>

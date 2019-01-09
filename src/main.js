@@ -5,10 +5,22 @@ import {
   faSyncAlt,
   faExternalLinkAlt,
   faCogs,
+  faSearch,
+  faArrowRight,
+  faFastForward,
+  faLanguage,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { store } from './lib/store';
-library.add(faSyncAlt, faExternalLinkAlt, faCogs);
+library.add(
+  faSyncAlt,
+  faExternalLinkAlt,
+  faCogs,
+  faSearch,
+  faArrowRight,
+  faFastForward,
+  faLanguage
+);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;
