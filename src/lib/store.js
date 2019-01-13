@@ -27,7 +27,10 @@ export const store = new Vuex.Store({
     },
     openTabs: [],
     selectedTab: 0,
-    keyword: '',
+    searchState: {
+      englishWordIndex: 0,
+      wordIndex: 0,
+    },
   },
   mutations: {
     openTabs(state, tabs = []) {
@@ -52,6 +55,42 @@ export const store = new Vuex.Store({
     },
     saveEnginesInStore(state, engines) {
       state.settings.searchEngines = engines;
+    },
+    clearEnglishWord(state) {
+      state.searchState.englishWordIndex = 0;
+    },
+    nextWord(state) {
+      const currentIndex = state.searchState.englishWordIndex;
+      state.englishWords[currentIndex] = {
+        ...state.englishWord,
+        done: true,
+      };
+      state.searchState.englishWordIndex = state.englishWords.findIndex(
+        (wordObject, index) => index > currentIndex && !wordObject.done
+      );
+    },
+    setTranslation(state, translation) {
+      const currentIndex = state.searchState.englishWordIndex;
+      if (!currentIndex || currentIndex === state.englishWords.length) {
+        return;
+      }
+      const currentEnglishWord = state.englishWords[currentIndex];
+      if (!currentEnglishWord) {
+        return;
+      }
+
+      const translations = state.translation[state.targetLanguage].map(
+        wordObject => {
+          if (wordObject.english !== currentEnglishWord) {
+            return wordObject;
+          }
+          return {
+            [state.targetLanguage]: translation,
+            ...wordObject,
+          };
+        }
+      );
+      state.translation[state.targetLanguage] = translations;
     },
   },
 });
