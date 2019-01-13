@@ -59,12 +59,16 @@ export const store = new Vuex.Store({
     clearEnglishWord(state) {
       state.searchState.englishWordIndex = 0;
     },
-    nextWord(state) {
+    setWordDone(state) {
       const currentIndex = state.searchState.englishWordIndex;
       state.englishWords[currentIndex] = {
         ...state.englishWord,
         done: true,
       };
+    },
+    nextWord(state, index) {
+      const currentIndex =
+        index || index === 0 ? index : state.searchState.englishWordIndex;
       state.searchState.englishWordIndex = state.englishWords.findIndex(
         (wordObject, index) => index > currentIndex && !wordObject.done
       );
