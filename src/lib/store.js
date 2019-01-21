@@ -83,7 +83,7 @@ export const store = new Vuex.Store({
     setWordDone(state) {
       const currentIndex = state.searchState.englishWordIndex;
       state.englishWords[currentIndex] = {
-        ...state.englishWord,
+        ...state.englishWords[currentIndex],
         done: true,
       };
     },
