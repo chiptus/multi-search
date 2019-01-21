@@ -35,8 +35,6 @@ export default {
   methods: {
     ...mapMutations({
       setEnglishWord: 'setEnglishWord',
-      setWordDone: 'setWordDone',
-      nextWord: 'nextWord',
     }),
   },
 };
