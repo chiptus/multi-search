@@ -1,25 +1,7 @@
 <template>
   <div class="top-bar">
     <div class="search-bar">
-      <div class="english-word-selector">
-        <label for="english-word-input" hidden>English word</label>
-        <select
-          :value="englishWord"
-          @change="setEnglishWord($event.target.value)"
-          id="english-word-input"
-        >
-          <option :value="null" selected disabled>English word</option>
-          <option
-            v-for="word in words"
-            :key="word.word + word.description + word.category"
-            :value="word.word"
-          >{{word.word}} ({{word.category}})</option>
-        </select>
-        <button type="button" alt="Translate">
-          <!-- @click="translate" -->
-          <font-awesome-icon icon="language" size="lg"></font-awesome-icon>
-        </button>
-      </div>
+      <english-words-selector></english-words-selector>
       <div class="arrow">
         <font-awesome-icon icon="arrow-right" size="lg"></font-awesome-icon>
       </div>
@@ -56,14 +38,14 @@
 </template>
 
 <script>
-import words from '../word-list.json';
-import spanishWords from '../spanish-list.json';
+import EnglishWordsSelector from './search-bar/english-words-selector';
 import OptionsModal from './options-modal';
 import { mapState, mapMutations } from 'vuex';
 
 export default {
   components: {
     OptionsModal,
+    EnglishWordsSelector,
   },
   computed: {
     ...mapState({
@@ -79,7 +61,6 @@ export default {
   data() {
     return {
       keyword: this.initialKeyword || '',
-      words,
       isModalOpen: false,
     };
   },
@@ -142,12 +123,6 @@ export default {
   width: 50px;
 }
 
-#english-word-input {
-  height: 100%;
-  width: 300px;
-  font-size: 1.5em;
-}
-
 .search-input {
   display: flex;
 }
@@ -177,13 +152,5 @@ export default {
 
 .options-btn:active {
   color: darkgoldenrod;
-}
-
-.english-word-selector {
-  display: flex;
-}
-
-.english-word-selector button {
-  width: 50px;
 }
 </style>
