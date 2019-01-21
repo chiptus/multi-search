@@ -10,12 +10,20 @@ Vue.use(Vuex);
 
 const vuexPersist = new VuexPersist({
   key: 'multi-search',
-  storage: localStorage,
+  // modules: ['settings', 'translations', 'searchState'],
+  reducer({ settings, translations, searchState }) {
+    return {
+      settings,
+      translations,
+      searchState,
+    };
+  },
 });
 
 export const store = new Vuex.Store({
   plugins: [vuexPersist.plugin],
   state: {
+    keyword: '',
     settings: {
       searchEngines: Object.keys(urls).map(u => urls[u]),
       closeWindowsOnSearch: true,
@@ -59,6 +67,19 @@ export const store = new Vuex.Store({
     clearEnglishWord(state) {
       state.searchState.englishWordIndex = 0;
     },
+    setEnglishWord(state, word) {
+      state.searchState.englishWordIndex = state.englishWords.findIndex(
+        wordObject => wordObject.word === word
+      );
+      const translations = state.translations[state.targetLanguage];
+      state.searchState.wordIndex = translations.findIndex(
+        wordObject => wordObject.english === word
+      );
+      state.keyword =
+        state.searchState.wordIndex > -1
+          ? translations[state.searchState.wordIndex].spanish
+          : '';
+    },
     setWordDone(state) {
       const currentIndex = state.searchState.englishWordIndex;
       state.englishWords[currentIndex] = {
@@ -72,6 +93,16 @@ export const store = new Vuex.Store({
       state.searchState.englishWordIndex = state.englishWords.findIndex(
         (wordObject, index) => index > currentIndex && !wordObject.done
       );
+      const currentWord =
+        state.englishWords[state.searchState.englishWordIndex];
+      const translations = state.translations[state.targetLanguage];
+      state.searchState.wordIndex = translations.findIndex(
+        wordObject => wordObject.english === currentWord.word
+      );
+      state.keyword =
+        state.searchState.wordIndex > -1
+          ? translations[state.searchState.wordIndex].spanish
+          : '';
     },
     setTranslation(state, translation) {
       const currentIndex = state.searchState.englishWordIndex;

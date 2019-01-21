@@ -3,15 +3,20 @@
     <div class="search-bar">
       <div class="english-word-selector">
         <label for="english-word-input" hidden>English word</label>
-        <select v-model="englishWord" id="english-word-input">
+        <select
+          :value="englishWord"
+          @change="setEnglishWord($event.target.value)"
+          id="english-word-input"
+        >
           <option :value="null" selected disabled>English word</option>
           <option
             v-for="word in words"
             :key="word.word + word.description + word.category"
-            :value="word"
+            :value="word.word"
           >{{word.word}} ({{word.category}})</option>
         </select>
-        <button type="button" @click="translate" alt="Translate">
+        <button type="button" alt="Translate">
+          <!-- @click="translate" -->
           <font-awesome-icon icon="language" size="lg"></font-awesome-icon>
         </button>
       </div>
@@ -30,7 +35,7 @@
         <button type="button" @click="search" alt="Search">
           <font-awesome-icon icon="search" size="lg"></font-awesome-icon>
         </button>
-        <button type="button" @click="next" alt="Next word">
+        <button type="button" alt="Next word" @click="next">
           <font-awesome-icon icon="fast-forward" size="lg"></font-awesome-icon>
         </button>
       </div>
@@ -54,39 +59,44 @@
 import words from '../word-list.json';
 import spanishWords from '../spanish-list.json';
 import OptionsModal from './options-modal';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   components: {
     OptionsModal,
   },
+  computed: {
+    ...mapState({
+      englishWord: state =>
+        state.englishWords[state.searchState.englishWordIndex].word,
+    }),
+  },
+  watch: {
+    initialKeyword(newValue) {
+      this.keyword = newValue;
+    },
+  },
   data() {
     return {
-      keyword: this.initialKeyword,
+      keyword: this.initialKeyword || '',
       words,
-      englishWord: null,
       isModalOpen: false,
     };
   },
   props: {
-    initialKeyword: { type: String, required: true },
+    initialKeyword: { type: String },
     onSearch: { type: Function, required: true },
     urls: { type: Array, required: true },
     addUrl: { type: Function, required: true },
     isCloseOnSearchEnabled: { type: Boolean },
     onSetCloseOnSearch: { type: Function, required: true },
   },
-  watch: {
-    englishWord(newValue) {
-      if (!newValue) {
-        return;
-      }
-      var spanishWord = spanishWords.find(
-        w => w.english.toLowerCase() === newValue.word.toLowerCase()
-      );
-      this.keyword = spanishWord ? spanishWord.spanish : '';
-    },
-  },
   methods: {
+    ...mapMutations({
+      setEnglishWord: 'setEnglishWord',
+      setWordDone: 'setWordDone',
+      nextWord: 'nextWord',
+    }),
     submitOnEnter({ keyCode }) {
       if (keyCode != 13) {
         return;
@@ -101,6 +111,10 @@ export default {
     },
     closeModal() {
       this.isModalOpen = false;
+    },
+    next() {
+      this.setWordDone();
+      this.nextWord();
     },
   },
 };

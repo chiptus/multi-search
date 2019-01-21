@@ -6,8 +6,8 @@ This is a helper for fluent-forever.com method and is based on fluent-forever.co
 
 ## User Stories
 
-- When the user opens the app for the first time no word is chosen, settings are default and only the search bar is visible
-- When the user opens the app (not for the first time), the next word is chosen, with its translation, and a link to google translate)
+- [x] When the user opens the app for the first time no word is chosen, settings are default and only the search bar is visible
+- [x] When the user opens the app (not for the first time), the last word is chosen
 - The user can check a word as done
 - The user can search for done words, but these words won't be selected automatically.
 - The user can set which sites are used for search.

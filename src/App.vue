@@ -40,6 +40,7 @@ export default {
       closeTabs: 'closeTabs',
       onSetCloseOnSearch: 'toggleCloseOnSearch',
       setKeyword: 'setKeyword',
+      nextWord: 'nextWord',
     }),
     closeAllWindows() {
       this.openedWindows.forEach(w => w.close());
