@@ -31,4 +31,24 @@ export default {
 </script>
 
 <style>
+.options {
+  width: 50px;
+}
+
+.options-btn {
+  font-size: 2em;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+}
+
+.options-btn:hover {
+  color: chocolate;
+}
+
+.options-btn:active {
+  color: darkgoldenrod;
+}
 </style>

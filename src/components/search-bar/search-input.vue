@@ -63,4 +63,17 @@ export default {
 </script>
 
 <style>
+.search-input {
+  display: flex;
+}
+
+.search-input input {
+  flex: 1;
+  font-size: 1.5em;
+}
+
+.search-input button {
+  width: 50px;
+  height: 100%;
+}
 </style>

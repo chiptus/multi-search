@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <search-bar
+    <top-bar
       v-bind="{
         initialKeyword: keyword,
         onSearch: search,
@@ -10,20 +10,20 @@
         isCloseOnSearchEnabled,
         onSetCloseOnSearch,
       }"
-    ></search-bar>
+    ></top-bar>
     <browser v-bind="{openWindows}"></browser>
   </div>
 </template>
 
 <script>
-import SearchBar from './components/search-bar';
+import TopBar from './components/top-bar';
 import browser from './components/browser';
 import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'app',
   components: {
-    SearchBar,
+    TopBar,
     browser,
   },
   computed: mapState({
