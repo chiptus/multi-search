@@ -69,7 +69,10 @@ export default {
       deleteEngine: 'deleteEngine',
     }),
     addUrl() {
-      this.searchEngines.push({});
+      const id = this.searchEngines.length
+        ? this.searchEngines[this.searchEngines.length - 1].id + 1
+        : 0;
+      this.searchEngines.push({ id });
     },
     save() {
       if (this.enginesDirty) {
