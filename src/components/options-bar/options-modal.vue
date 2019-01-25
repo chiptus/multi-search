@@ -1,7 +1,12 @@
 <template>
   <modal :close="close" title="Options">
     <template slot="body">
-      <urls-options :urls="searchEngines" :addUrl="addUrl" :setEngine="setEngine"></urls-options>
+      <urls-options
+        :urls="searchEngines"
+        :addUrl="addUrl"
+        :setEngine="setEngine"
+        :deleteEngine="deleteEngine"
+      ></urls-options>
       <div>
         <input
           type="checkbox"
@@ -61,6 +66,7 @@ export default {
     ...mapMutations({
       setCloseOnSearch: 'setCloseOnSearch',
       saveEnginesInStore: 'saveEnginesInStore',
+      deleteEngine: 'deleteEngine',
     }),
     addUrl() {
       this.searchEngines.push({});

@@ -8,6 +8,7 @@ import {
   faArrowRight,
   faFastForward,
   faLanguage,
+  faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -19,7 +20,8 @@ export default function initIcons() {
     faSearch,
     faArrowRight,
     faFastForward,
-    faLanguage
+    faLanguage,
+    faTimesCircle
   );
   Vue.component('font-awesome-icon', FontAwesomeIcon);
 }

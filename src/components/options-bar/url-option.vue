@@ -19,6 +19,11 @@
       >
       <label :for="url.id+'-external-checkbox'">External</label>
     </div>
+    <div>
+      <button @click="deleteUrl(url)">
+        <font-awesome-icon icon="times-circle"></font-awesome-icon>
+      </button>
+    </div>
   </div>
 </template>
 
@@ -29,6 +34,10 @@ export default {
       required: true,
     },
     setEngine: {
+      required: true,
+      type: Function,
+    },
+    deleteUrl: {
       required: true,
       type: Function,
     },

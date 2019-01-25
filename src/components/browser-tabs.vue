@@ -15,7 +15,6 @@
         <font-awesome-icon icon="sync-alt"></font-awesome-icon>
       </button>
     </li>
-    <!-- TODO move to browser <button v-on:click="onClose" >Close opened windows</button> -->
   </ul>
 </template>
 

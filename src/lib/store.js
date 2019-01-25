@@ -105,6 +105,11 @@ export const store = new Vuex.Store({
           ? translations[state.searchState.wordIndex].spanish
           : '';
     },
+    deleteEngine(state, engine) {
+      state.settings.searchEngines = state.settings.searchEngines.filter(
+        e => e.name !== engine.name
+      );
+    },
     setTranslation(state, translation) {
       const currentIndex = state.searchState.englishWordIndex;
       if (!currentIndex || currentIndex === state.englishWords.length) {

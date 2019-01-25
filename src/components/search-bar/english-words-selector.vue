@@ -11,6 +11,7 @@
         v-for="word in words"
         :key="word.word + word.description + word.category"
         :value="word.word"
+        :class="{done: word.done}"
       >{{word.word}} ({{word.category}})</option>
     </select>
     <translate-btn/>
@@ -53,5 +54,10 @@ export default {
 
 .english-word-selector button {
   width: 50px;
+}
+
+option.done {
+  background-color: chartreuse;
+  color: gray;
 }
 </style>
