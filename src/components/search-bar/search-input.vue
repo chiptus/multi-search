@@ -14,6 +14,15 @@
     <button type="button" alt="Next word" @click="next">
       <font-awesome-icon icon="fast-forward" size="lg"></font-awesome-icon>
     </button>
+    <select v-model="siteToSearch">
+      <option v-for="site in searchEngines" :key="site.id" :value="site">
+        {{site.name}}
+      </option>
+    </select>
+    <button type="button" @click="searchSingleSite(siteToSearch)" alt="Search">
+      <font-awesome-icon icon="search" size="lg"></font-awesome-icon>
+      Search single site
+    </button>
   </div>
 </template>
 
@@ -29,11 +38,13 @@ export default {
   data() {
     return {
       keyword: this.initialKeyword || '',
+      siteToSearch: ''
     };
   },
   computed: {
     ...mapState({
       initialKeyword: state => state.keyword,
+      searchEngines: state => state.settings.searchEngines
     }),
   },
   props: {
@@ -52,7 +63,10 @@ export default {
       this.search();
     },
     search() {
-      this.onSearch(this.keyword);
+      this.onSearch(this.keyword, this.searchEngines);
+    },
+    searchSingleSite(site) {
+      this.onSearch(this.keyword, [site]);
     },
     next() {
       this.setWordDone();

@@ -2,13 +2,7 @@
   <div id="app">
     <top-bar
       v-bind="{
-        initialKeyword: keyword,
         onSearch: search,
-        onClose: closeAllWindows,
-        urls,
-        addUrl,
-        isCloseOnSearchEnabled,
-        onSetCloseOnSearch,
       }"
     ></top-bar>
     <browser v-bind="{openWindows}"></browser>
@@ -46,16 +40,13 @@ export default {
       this.openedWindows.forEach(w => w.close());
       this.openedWindows.length = 0;
     },
-    addUrl() {
-      this.urls.push({});
-    },
-    async search(keyword) {
+    async search(keyword, searchEngines) {
       this.setKeyword(keyword);
       if (this.isCloseOnSearchEnabled) {
         this.closeAllWindows();
         this.closeTabs();
       }
-      const results = this.urls
+      const results = searchEngines
         .filter(e => e.enabled)
         .map(engine => ({
           url: engine.link.replace('%s', keyword),
