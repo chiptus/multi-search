@@ -11,12 +11,13 @@ Vue.use(Vuex);
 const vuexPersist = new VuexPersist({
   key: 'multi-search',
   // modules: ['settings', 'translations', 'searchState'],
-  reducer({ settings, translations, searchState, keyword }) {
+  reducer({ settings, translations, searchState, keyword, englishWords }) {
     return {
       settings,
       translations,
       searchState,
       keyword,
+      englishWords
     };
   },
 });
