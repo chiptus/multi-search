@@ -18,7 +18,7 @@ This is a helper for fluent-forever.com method and is based on fluent-forever.co
 - [x] When the user searches for a word it will open a tab for each site
 - [x] The user can decide to search in one site (including disabled)
 - [ ] When the user searches for a single site, it doesn't close the other tabs/windows
-- The user can close any tab
+- [ ] The user can close any tab
 - [x] The user can refresh any tab
 - [x] The user can move a tab to external window
 - [x] Settings are persisted
@@ -27,6 +27,11 @@ This is a helper for fluent-forever.com method and is based on fluent-forever.co
     - [x] Name, url, enabled, external
   - [x] Should external windows close when searching
 - [x] different settings are saved between page changes
+
+### v2
+
+- [ ] Word list is downloaded from wikipedia's top X words
+- [ ] The user can choose a list and the backend will download the word list. when it's done there will be a notification to the user.
 
 ## Data models
 
