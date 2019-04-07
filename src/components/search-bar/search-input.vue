@@ -43,6 +43,11 @@ export default {
       siteToSearch: '',
     };
   },
+  mounted() {
+    this.siteToSearch = this.searchEngines.length
+      ? this.searchEngines[0]
+      : null;
+  },
   computed: {
     ...mapState({
       initialKeyword: state => state.keyword,
