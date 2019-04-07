@@ -17,7 +17,7 @@ This is a helper for fluent-forever.com method and is based on fluent-forever.co
 - [x] The user can select whether a site can be opened in an external window
 - [x] When the user searches for a word it will open a tab for each site
 - [x] The user can decide to search in one site (including disabled)
-- [ ] When the user searches for a single site, it doesn't close the other tabs/windows
+- [x] When the user searches for a single site, it doesn't close the other tabs/windows
 - [ ] The user can close any tab
 - [x] The user can refresh any tab
 - [x] The user can move a tab to external window
