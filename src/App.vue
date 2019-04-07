@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <top-bar
-      v-bind="{
+    <top-bar v-bind="{
         onSearch: search,
-      }"
-    ></top-bar>
+      }"></top-bar>
     <browser v-bind="{openWindows}"></browser>
   </div>
 </template>
@@ -40,8 +38,22 @@ export default {
       this.openedWindows.forEach(w => w.close());
       this.openedWindows.length = 0;
     },
+    async searchSingleSite(keyword, searchEngine) {
+      if (!keyword) {
+        return;
+      }
+      const url = searchEngine.replace('%s', keyword);
+      const result = { url, ...searchEngine };
+      if (searchEngine.external) {
+        return this.openWindows(result);
+      }
+      this.openTabs(result);
+    },
     async search(keyword, searchEngines) {
       this.setKeyword(keyword);
+      if (!keyword) {
+        return;
+      }
       if (this.isCloseOnSearchEnabled) {
         this.closeAllWindows();
         this.closeTabs();

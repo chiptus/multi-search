@@ -15,13 +15,15 @@
       <font-awesome-icon icon="fast-forward" size="lg"></font-awesome-icon>
     </button>
     <select v-model="siteToSearch">
-      <option v-for="site in searchEngines" :key="site.id" :value="site">
-        {{site.name}}
-      </option>
+      <option v-for="site in searchEngines" :key="site.id" :value="site">{{site.name}}</option>
     </select>
-    <button type="button" @click="searchSingleSite(siteToSearch)" alt="Search">
-      <font-awesome-icon icon="search" size="lg"></font-awesome-icon>
-      Search single site
+    <button
+      class="single-site-btn"
+      type="button"
+      @click="searchSingleSite(siteToSearch)"
+      alt="Search single site"
+    >
+      <font-awesome-icon icon="search" size="lg"></font-awesome-icon>Search single site
     </button>
   </div>
 </template>
@@ -38,13 +40,13 @@ export default {
   data() {
     return {
       keyword: this.initialKeyword || '',
-      siteToSearch: ''
+      siteToSearch: '',
     };
   },
   computed: {
     ...mapState({
       initialKeyword: state => state.keyword,
-      searchEngines: state => state.settings.searchEngines
+      searchEngines: state => state.settings.searchEngines,
     }),
   },
   props: {
@@ -63,9 +65,15 @@ export default {
       this.search();
     },
     search() {
+      if (!this.keyword) {
+        return;
+      }
       this.onSearch(this.keyword, this.searchEngines);
     },
     searchSingleSite(site) {
+      if (!site || !this.keyword) {
+        return;
+      }
       this.onSearch(this.keyword, [site]);
     },
     next() {
@@ -89,5 +97,9 @@ export default {
 .search-input button {
   width: 50px;
   height: 100%;
+}
+
+.search-input .single-site-btn {
+  width: initial;
 }
 </style>
