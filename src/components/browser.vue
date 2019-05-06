@@ -1,6 +1,6 @@
 <template>
   <div class="search-results" v-if="results.length">
-    <browserTabs v-bind="{results, selectedTab, openWindows}"></browserTabs>
+    <browserTabs v-bind="{results, selectedTab, openWindows,selectTab, closeTab}"></browserTabs>
     <div class="browser">
       <vue-friendly-iframe
         v-for="(result, index) in results"
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 import browserTabs from './browser-tabs';
 import VueFriendlyIframe from './vue-iframe';
 
@@ -29,6 +29,12 @@ export default {
     results: state => state.openTabs,
     selectedTab: state => state.selectedTab,
   }),
+  methods: {
+    ...mapMutations({
+      selectTab: 'selectTab',
+      closeTab: 'closeTab',
+    }),
+  },
 };
 </script>
 

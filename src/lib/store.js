@@ -17,7 +17,7 @@ const vuexPersist = new VuexPersist({
       translations,
       searchState,
       keyword,
-      englishWords
+      englishWords,
     };
   },
 });
@@ -46,6 +46,9 @@ export const store = new Vuex.Store({
     openTabs(state, tabs = []) {
       state.openTabs = tabs;
       state.selectedTab = 0;
+    },
+    closeTab(state, tab) {
+      state.openTabs = state.openTabs.filter(t => tab.id !== t.id);
     },
     closeTabs(state) {
       state.openTabs = [];
