@@ -15,14 +15,14 @@
     "feather-icons": "^4.7.3",
     "vue": "^2.5.17",
     "vue-frame": "^1.0.7",
-    "vue-friendly-iframe": "^0.9.0",
+    "vue-friendly-iframe": "^0.16.0",
     "vuex": "^3.0.1",
     "vuex-persist": "^2.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.5",
-    "@vue/cli-plugin-eslint": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
     "push-dir": "^0.4.1",
     "vue-template-compiler": "^2.5.17"
   },
